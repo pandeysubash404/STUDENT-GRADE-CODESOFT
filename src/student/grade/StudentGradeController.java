@@ -11,7 +11,6 @@ public class StudentGradeController {
 
     public void handleUserInput() {
         int userInput = (int)getUserInput();
-        System.out.println(userInput + " userGuess");
 
         if (view.getMarksField().isEmpty() || view.getSelectedSubject() == "Select") {
             view.showError("Please select subject and enter a marks.");
@@ -75,6 +74,7 @@ public class StudentGradeController {
         model.setScienceMarks(0);
         view.updateAll(tableData());
         view.setInputField(0);
+        view.updateResult();
     }
 
 }

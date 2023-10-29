@@ -22,9 +22,11 @@ public class StudentGradeModel {
     public int getFullMarks() {
         return fullMarks;
     }
-/*public float getPassMarks() {
+    /*
+    public float getPassMarks() {
         return passMarks;
-    }*/
+    }
+    */
     public float getComputerMarks() {
         return computerMarks;
     }
@@ -70,6 +72,9 @@ public class StudentGradeModel {
         return totalMarks;
     }
 
+    public void setTotalMarks(float totalMarks){
+        this.totalMarks=totalMarks;
+    }
 
     public String getGradeLevel() {
         if (this.totalMarks == 0) {
