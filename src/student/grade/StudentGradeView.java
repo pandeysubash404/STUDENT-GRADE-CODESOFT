@@ -146,13 +146,10 @@ public class StudentGradeView extends KeyAdapter implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object object = e.getSource();
         if (object == resetButton) {
-            System.out.println("reset button");
             controller.resetAll();
         } else if (object == resultButton) {
-            System.out.println("result button");
             updateResult();
         } else {
-            System.out.println("add button");
             controller.handleUserInput();
             //updateResult();
         }
@@ -161,16 +158,13 @@ public class StudentGradeView extends KeyAdapter implements ActionListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-        //int userInput = getUserInput();
 
         if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
             showError(" ");
         }
-        // controller.inputError();
         else if (controller.getUserInput() == -1) {
             errorLabel.setText("Invalid input. Please enter a number.");
         }
-        System.out.println("Inputed marks : " + controller.getUserInput());
 
 
     }

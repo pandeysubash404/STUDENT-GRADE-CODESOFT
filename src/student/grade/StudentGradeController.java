@@ -28,7 +28,6 @@ public class StudentGradeController {
     public float getUserInput() {
         String inputText = view.getMarksField();
         try {
-           // return Integer.parseInt(inputText);
             return Float.parseFloat(inputText);
         } catch (NumberFormatException e) {
             return -1;

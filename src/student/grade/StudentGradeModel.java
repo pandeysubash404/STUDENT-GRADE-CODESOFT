@@ -22,13 +22,7 @@ public class StudentGradeModel {
     public int getFullMarks() {
         return fullMarks;
     }
-/*
-    public void setFullMarks(int fullMarks) {
-        this.fullMarks = fullMarks;
-    }
-
-
-    public float getPassMarks() {
+/*public float getPassMarks() {
         return passMarks;
     }*/
     public float getComputerMarks() {
